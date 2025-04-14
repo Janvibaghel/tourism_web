@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel with Janvi | Explore Chhattisgarh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1a1a1a;
+            color: #ffffff;
+            padding: 0.5rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem 0;
+        }
+
+        .logo h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .chhattisgarh-elements {
+            display: flex;
+            align-items: center;
+        }
+
+        .bastar-art {
+            font-size: 36px;
+            opacity: 0.8;
+            margin: 0 0.5rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 0.2rem 0;
+        }
+
+        .nav-links li {
+            margin: 0 8px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-size: 0.9rem;
+            padding: 4px 12px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            background-color: #f0f0f0;
+        }
+
+        .nav-links a:hover {
+            background-color: #e74c3c;
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .info-box {
+            background-color: #ffffff;
+            color: #1a1a1a;
+            padding: 10px;
+            font-size: 0.9rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 10px;
+        }
+
+        .info-item span {
+            margin-right: 5px;
+        }
+
+        #about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin-top: 50px;
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #4CAF50;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile h2 {
+            margin-top: 15px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            font-size: 24px;
+            color: #4CAF50;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #45a049;
+        }
+
+        .about-content {
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content h2 {
+            color: #4CAF50;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        #about {
+            animation: fadeIn 1s ease-out;
+        }
+
+        .profile img {
+            transition: transform 0.3s ease;
+        }
+
+        .profile img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="chhattisgarh-elements">
+                <span class="bastar-art" style="animation-delay: 0s;">🎭</span>
+                <span class="bastar-art" style="animation-delay: 0.5s;">🌾</span>
+                <span class="bastar-art" style="animation-delay: 1s;">🏞️</span>
+            </div>
+            <div class="logo">
+                <h1>TRAVEL WITH JANVI</h1>
+            </div>
+            <div class="chhattisgarh-elements">
+                <span class="bastar-art" style="animation-delay: 1.5s;">🦚</span>
+                <span class="bastar-art" style="animation-delay: 2s;">🍃</span>
+                <span class="bastar-art" style="animation-delay: 2.5s;">🏺</span>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+            
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="info-box">
+        <div class="info-item"><span>🎭</span> Bastar art & culture</div>
+        <div class="info-item"><span>🌾</span> Agriculture</div>
+        <div class="info-item"><span>🏞️</span> Natural beauty</div>
+        <div class="info-item"><span>🦚</span> State bird (Peacock)</div>
+        <div class="info-item"><span>🍃</span> Lush greenery</div>
+        <div class="info-item"><span>🏺</span> Traditional pottery</div>
+    </div>
+
+    <section id="about">
+        <div class="profile">
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQGtTCt9ZTsd0g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718585881414?e=1734566400&v=beta&t=qgNVxmQbSqE02ebOiwBOItkWd0nd65eineYab8ENsKw" alt="Janvi Baghel">
+            <h2>JANVI BAGHEL</h2>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/janvibaghel" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:janvibaghel0612@gmail.com"><i class="far fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="about-content">
+            <h2>About Chhattisgarh Tourism</h2>
+            <p>Welcome to the heart of India's hidden gem - Chhattisgarh! Our website is your gateway to exploring the rich cultural heritage, breathtaking landscapes, and warm hospitality of this enchanting state.</p>
+            <p>At Travel with Janvi, we're passionate about showcasing the best of Chhattisgarh's tourism. From the ancient temples of Sirpur to the cascading waterfalls of Chitrakote, we'll guide you through an unforgettable journey filled with natural wonders and cultural experiences.</p>
+            <p>Our mission is to support sustainable tourism that benefits local communities while preserving the state's pristine environment. Join us as we uncover the secrets of Chhattisgarh's tribal arts, savor its unique cuisine, and immerse ourselves in its vibrant festivals.</p>
+            <p>Let's embark on an adventure that will not only create lasting memories but also contribute to the growth and preservation of Chhattisgarh's tourism industry. Together, we'll explore, learn, and fall in love with the diverse beauty of this remarkable state.</p>
+        </div>
+    </section>
+
+    <!-- ... rest of your body content ... -->
+    <section id="balodabazaar" class="attractions">
+        <div class="container">
+            <h2>Top Attractions in Balodabazaar</h2>
+            <div class="attraction-grid">
+                <div class="attraction-card">
+                    <img src="Images/Waterfall.jpg" alt="Waterfall">
+                    <div class="content">
+                        <h3>Waterfalls</h3>
+                        <p>Experience nature's beauty</p>
+                        <a href="BalodabazarWaterfall.html">Learn More</a>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <img src="Images/dam.jpg" alt="Dam">
+                    <div class="content">
+                        <h3>Dams</h3>
+                        <p>Marvel at engineering wonders</p>
+                        <a href="balodabazarDam.html">Learn More</a>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <img src="Images/temple.jpg" alt="Temple">
+                    <div class="content">
+                        <h3>Temples</h3>
+                        <p>Explore spiritual heritage</p>
+                        <a href="balodabazarTemple.html">Learn More</a>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <img src="Images/Wild life.jpg" alt="Wildlife">
+                    <div class="content">
+                        <h3>Wildlife</h3>
+                        <p>Discover local biodiversity</p>
+                        <a href="BalodabazarNature.html">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

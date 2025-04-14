@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balodabazar Waterfalls</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url('Images/waterfall-hero.jpg') no-repeat center center/cover;
+            height: 60vh;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        nav {
+            background: #333;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #f72585;
+        }
+        .waterfall-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 4rem 0;
+        }
+        .waterfall-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .waterfall-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+        .waterfall-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .waterfall-info {
+            padding: 1.5rem;
+        }
+        .waterfall-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .waterfall-info p {
+            margin-bottom: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            background: #f72585;
+            color: #fff;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #b5179e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Balodabazar Waterfalls</h1>
+        <p>Discover the natural beauty of our region</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="cities.html">Cities</a></li>
+            <li><a href="Balodabazar.html">Balodabazar</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="waterfall-grid">
+            <div class="waterfall-card">
+                <img src="Images/siddhkholwaterfall.avif" alt="Siddhakhol Waterfall">
+                <div class="waterfall-info">
+                    <h3>Siddhakhol Waterfall</h3>
+                    <p>A majestic waterfall surrounded by lush greenery, perfect for nature lovers and photographers.</p>
+                    <a href="sidhakhol.html" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="waterfall-card">
+                <img src="Images/Kutan nala.jpg" alt="Kutan Nala">
+                <div class="waterfall-info">
+                    <h3>Kutan Nala</h3>
+                    <p>A serene stream with cascading waters, ideal for picnics and relaxation amidst nature.</p>
+                    <a href="kutannala.html" class="btn">Learn More</a>
+                </div>
+            </div>
+            <!-- Add more waterfall cards as needed -->
+        </section>
+    </main>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from("header", {
+            opacity: 0,
+            y: -50,
+            duration: 1,
+            ease: "power3.out"
+        });
+
+        gsap.from(".waterfall-card", {
+            opacity: 0,
+            y: 50,
+            stagger: 0.2,
+            duration: 0.8,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: ".waterfall-grid",
+                start: "top 80%"
+            }
+        });
+    </script>
+</body>
+</html>
