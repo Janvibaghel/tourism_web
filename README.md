@@ -48,4 +48,4 @@ Include image galleries and travel tips
 
 Created by Janvi Baghel
 🎓 BTech (Hons) in Computer Science & Engineering with AI
-📍 CSVTU |  | [Instagram](https://www.instagram.com/wheres.janvi/)
+📍 CSVTU |[github] (https://github.com/Janvibaghel ) | [Instagram](https://www.instagram.com/wheres.janvi/)
